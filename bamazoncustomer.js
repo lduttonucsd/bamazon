@@ -25,6 +25,19 @@ function displayStock() {
     connection.query("SELECT * FROM products ", (err, response) => {
         if (err) throw err;
         console.table(response);
+        purchasePrompt();
     }
     )
 };
+
+function purchasePrompt() {
+    // select item to purchase via ID
+    // select quantity to purchase
+    // remove quantity purchased from total stock
+    //if quantity is too low for purchase, log insufficient quantity
+    //remove quantity of item(s) purchased from database
+    //show total cost of purchase
+
+};
+
+
